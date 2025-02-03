@@ -1,0 +1,407 @@
+{
+    "name": "Segment w/ Variable (Perform Demo)",
+    "isPublic": false,
+    "includes": [
+        {
+            "filterTree": {
+                "type": "Group",
+                "range": {
+                    "from": 0,
+                    "to": 73
+                },
+                "logicalOperator": "AND",
+                "explicit": false,
+                "children": [
+                    {
+                        "type": "Statement",
+                        "range": {
+                            "from": 0,
+                            "to": 29
+                        },
+                        "key": {
+                            "type": "Key",
+                            "textValue": "k8s.cluster.name",
+                            "value": "k8s.cluster.name",
+                            "range": {
+                                "from": 0,
+                                "to": 16
+                            }
+                        },
+                        "operator": {
+                            "type": "ComparisonOperator",
+                            "textValue": "=",
+                            "value": "=",
+                            "range": {
+                                "from": 17,
+                                "to": 18
+                            }
+                        },
+                        "value": {
+                            "type": "String",
+                            "textValue": "\"$cluster\"",
+                            "value": "$cluster",
+                            "range": {
+                                "from": 19,
+                                "to": 29
+                            },
+                            "isEscaped": true
+                        }
+                    },
+                    {
+                        "type": "LogicalOperator",
+                        "textValue": "AND",
+                        "value": "AND",
+                        "range": {
+                            "from": 30,
+                            "to": 33
+                        }
+                    },
+                    {
+                        "type": "Statement",
+                        "range": {
+                            "from": 34,
+                            "to": 72
+                        },
+                        "key": {
+                            "type": "Key",
+                            "textValue": "k8s.namespace.name",
+                            "value": "k8s.namespace.name",
+                            "range": {
+                                "from": 34,
+                                "to": 52
+                            }
+                        },
+                        "operator": {
+                            "type": "ComparisonOperator",
+                            "textValue": "=",
+                            "value": "=",
+                            "range": {
+                                "from": 53,
+                                "to": 54
+                            }
+                        },
+                        "value": {
+                            "type": "String",
+                            "textValue": "{{.service-name}}",
+                            "value": "{{.service-name}}",
+                            "range": {
+                                "from": 55,
+                                "to": 72
+                            }
+                        }
+                    }
+                ]
+            },
+            "dataObject": "_all_data_object",
+            "applyTo": [],
+            "filter": "{\"type\":\"Group\",\"range\":{\"from\":0,\"to\":73},\"logicalOperator\":\"AND\",\"explicit\":false,\"children\":[{\"type\":\"Statement\",\"range\":{\"from\":0,\"to\":29},\"key\":{\"type\":\"Key\",\"textValue\":\"k8s.cluster.name\",\"value\":\"k8s.cluster.name\",\"range\":{\"from\":0,\"to\":16}},\"operator\":{\"type\":\"ComparisonOperator\",\"textValue\":\"=\",\"value\":\"=\",\"range\":{\"from\":17,\"to\":18}},\"value\":{\"type\":\"String\",\"textValue\":\"\\\"$cluster\\\"\",\"value\":\"$cluster\",\"range\":{\"from\":19,\"to\":29},\"isEscaped\":true}},{\"type\":\"LogicalOperator\",\"textValue\":\"AND\",\"value\":\"AND\",\"range\":{\"from\":30,\"to\":33}},{\"type\":\"Statement\",\"range\":{\"from\":34,\"to\":72},\"key\":{\"type\":\"Key\",\"textValue\":\"k8s.namespace.name\",\"value\":\"k8s.namespace.name\",\"range\":{\"from\":34,\"to\":52}},\"operator\":{\"type\":\"ComparisonOperator\",\"textValue\":\"=\",\"value\":\"=\",\"range\":{\"from\":53,\"to\":54}},\"value\":{\"type\":\"String\",\"textValue\":\"{{.service-name}}\",\"value\":\"{{.service-name}}\",\"range\":{\"from\":55,\"to\":72}}}]}"
+        },
+        {
+            "filterTree": {
+                "type": "Group",
+                "range": {
+                    "from": 0,
+                    "to": 35
+                },
+                "logicalOperator": "AND",
+                "explicit": false,
+                "children": [
+                    {
+                        "type": "Statement",
+                        "range": {
+                            "from": 0,
+                            "to": 34
+                        },
+                        "key": {
+                            "type": "Key",
+                            "textValue": "kubernetesClusterName",
+                            "value": "kubernetesClusterName",
+                            "range": {
+                                "from": 0,
+                                "to": 21
+                            }
+                        },
+                        "operator": {
+                            "type": "ComparisonOperator",
+                            "textValue": "=",
+                            "value": "=",
+                            "range": {
+                                "from": 22,
+                                "to": 23
+                            }
+                        },
+                        "value": {
+                            "type": "String",
+                            "textValue": "\"$cluster\"",
+                            "value": "$cluster",
+                            "isEscaped": true,
+                            "range": {
+                                "from": 24,
+                                "to": 34
+                            }
+                        }
+                    }
+                ]
+            },
+            "dataObject": "dt.entity.cloud_application",
+            "relationship": {
+                "name": "belongs_to",
+                "target": "dt.entity.cloud_application_namespace"
+            },
+            "applyTo": [],
+            "filter": "{\"type\":\"Group\",\"range\":{\"from\":0,\"to\":35},\"logicalOperator\":\"AND\",\"explicit\":false,\"children\":[{\"type\":\"Statement\",\"range\":{\"from\":0,\"to\":34},\"key\":{\"type\":\"Key\",\"textValue\":\"kubernetesClusterName\",\"value\":\"kubernetesClusterName\",\"range\":{\"from\":0,\"to\":21}},\"operator\":{\"type\":\"ComparisonOperator\",\"textValue\":\"=\",\"value\":\"=\",\"range\":{\"from\":22,\"to\":23}},\"value\":{\"type\":\"String\",\"textValue\":\"\\\"$cluster\\\"\",\"value\":\"$cluster\",\"isEscaped\":true,\"range\":{\"from\":24,\"to\":34}}}]}"
+        },
+        {
+            "filterTree": {
+                "type": "Group",
+                "range": {
+                    "from": 0,
+                    "to": 35
+                },
+                "logicalOperator": "AND",
+                "explicit": false,
+                "children": [
+                    {
+                        "type": "Statement",
+                        "range": {
+                            "from": 0,
+                            "to": 34
+                        },
+                        "key": {
+                            "type": "Key",
+                            "textValue": "kubernetesClusterName",
+                            "value": "kubernetesClusterName",
+                            "range": {
+                                "from": 0,
+                                "to": 21
+                            }
+                        },
+                        "operator": {
+                            "type": "ComparisonOperator",
+                            "textValue": "=",
+                            "value": "=",
+                            "range": {
+                                "from": 22,
+                                "to": 23
+                            }
+                        },
+                        "value": {
+                            "type": "String",
+                            "textValue": "\"$cluster\"",
+                            "value": "$cluster",
+                            "isEscaped": true,
+                            "range": {
+                                "from": 24,
+                                "to": 34
+                            }
+                        }
+                    }
+                ]
+            },
+            "dataObject": "dt.entity.cloud_application_instance",
+            "relationship": {
+                "name": "belongs_to",
+                "target": "dt.entity.cloud_application_namespace"
+            },
+            "applyTo": [],
+            "filter": "{\"type\":\"Group\",\"range\":{\"from\":0,\"to\":35},\"logicalOperator\":\"AND\",\"explicit\":false,\"children\":[{\"type\":\"Statement\",\"range\":{\"from\":0,\"to\":34},\"key\":{\"type\":\"Key\",\"textValue\":\"kubernetesClusterName\",\"value\":\"kubernetesClusterName\",\"range\":{\"from\":0,\"to\":21}},\"operator\":{\"type\":\"ComparisonOperator\",\"textValue\":\"=\",\"value\":\"=\",\"range\":{\"from\":22,\"to\":23}},\"value\":{\"type\":\"String\",\"textValue\":\"\\\"$cluster\\\"\",\"value\":\"$cluster\",\"isEscaped\":true,\"range\":{\"from\":24,\"to\":34}}}]}"
+        },
+        {
+            "filterTree": {
+                "type": "Group",
+                "range": {
+                    "from": 0,
+                    "to": 32
+                },
+                "logicalOperator": "AND",
+                "explicit": false,
+                "children": [
+                    {
+                        "type": "Statement",
+                        "range": {
+                            "from": 0,
+                            "to": 31
+                        },
+                        "key": {
+                            "type": "Key",
+                            "textValue": "entity.name",
+                            "value": "entity.name",
+                            "range": {
+                                "from": 0,
+                                "to": 11
+                            }
+                        },
+                        "operator": {
+                            "type": "ComparisonOperator",
+                            "textValue": "=",
+                            "value": "=",
+                            "range": {
+                                "from": 12,
+                                "to": 13
+                            }
+                        },
+                        "value": {
+                            "type": "String",
+                            "textValue": "{{.service-name}}",
+                            "value": "{{.service-name}}",
+                            "range": {
+                                "from": 14,
+                                "to": 31
+                            }
+                        }
+                    }
+                ]
+            },
+            "dataObject": "dt.entity.cloud_application_namespace",
+            "applyTo": [
+                "bizevents",
+                "events",
+                "logs",
+                "metrics",
+                "spans"
+            ],
+            "filter": "{\"type\":\"Group\",\"range\":{\"from\":0,\"to\":32},\"logicalOperator\":\"AND\",\"explicit\":false,\"children\":[{\"type\":\"Statement\",\"range\":{\"from\":0,\"to\":31},\"key\":{\"type\":\"Key\",\"textValue\":\"entity.name\",\"value\":\"entity.name\",\"range\":{\"from\":0,\"to\":11}},\"operator\":{\"type\":\"ComparisonOperator\",\"textValue\":\"=\",\"value\":\"=\",\"range\":{\"from\":12,\"to\":13}},\"value\":{\"type\":\"String\",\"textValue\":\"{{.service-name}}\",\"value\":\"{{.service-name}}\",\"range\":{\"from\":14,\"to\":31}}}]}"
+        },
+        {
+            "filterTree": {
+                "type": "Group",
+                "range": {
+                    "from": 0,
+                    "to": 35
+                },
+                "logicalOperator": "AND",
+                "explicit": false,
+                "children": [
+                    {
+                        "type": "Statement",
+                        "range": {
+                            "from": 0,
+                            "to": 34
+                        },
+                        "key": {
+                            "type": "Key",
+                            "textValue": "kubernetesClusterName",
+                            "value": "kubernetesClusterName",
+                            "range": {
+                                "from": 0,
+                                "to": 21
+                            }
+                        },
+                        "operator": {
+                            "type": "ComparisonOperator",
+                            "textValue": "=",
+                            "value": "=",
+                            "range": {
+                                "from": 22,
+                                "to": 23
+                            }
+                        },
+                        "value": {
+                            "type": "String",
+                            "textValue": "\"$cluster\"",
+                            "value": "$cluster",
+                            "isEscaped": true,
+                            "range": {
+                                "from": 24,
+                                "to": 34
+                            }
+                        }
+                    }
+                ]
+            },
+            "dataObject": "dt.entity.container_group_instance",
+            "relationship": {
+                "name": "belongs_to",
+                "target": "dt.entity.cloud_application_namespace"
+            },
+            "applyTo": [],
+            "filter": "{\"type\":\"Group\",\"range\":{\"from\":0,\"to\":35},\"logicalOperator\":\"AND\",\"explicit\":false,\"children\":[{\"type\":\"Statement\",\"range\":{\"from\":0,\"to\":34},\"key\":{\"type\":\"Key\",\"textValue\":\"kubernetesClusterName\",\"value\":\"kubernetesClusterName\",\"range\":{\"from\":0,\"to\":21}},\"operator\":{\"type\":\"ComparisonOperator\",\"textValue\":\"=\",\"value\":\"=\",\"range\":{\"from\":22,\"to\":23}},\"value\":{\"type\":\"String\",\"textValue\":\"\\\"$cluster\\\"\",\"value\":\"$cluster\",\"isEscaped\":true,\"range\":{\"from\":24,\"to\":34}}}]}"
+        },
+        {
+            "filterTree": {
+                "type": "Group",
+                "range": {
+                    "from": 0,
+                    "to": 25
+                },
+                "logicalOperator": "AND",
+                "explicit": false,
+                "children": [
+                    {
+                        "type": "Statement",
+                        "range": {
+                            "from": 0,
+                            "to": 24
+                        },
+                        "key": {
+                            "type": "Key",
+                            "textValue": "entity.name",
+                            "value": "entity.name",
+                            "range": {
+                                "from": 0,
+                                "to": 11
+                            }
+                        },
+                        "operator": {
+                            "type": "ComparisonOperator",
+                            "textValue": "=",
+                            "value": "=",
+                            "range": {
+                                "from": 12,
+                                "to": 13
+                            }
+                        },
+                        "value": {
+                            "type": "String",
+                            "textValue": "\"$cluster\"",
+                            "value": "$cluster",
+                            "isEscaped": true,
+                            "range": {
+                                "from": 14,
+                                "to": 24
+                            }
+                        }
+                    }
+                ]
+            },
+            "dataObject": "dt.entity.kubernetes_cluster",
+            "relationship": {
+                "name": "cluster_of",
+                "target": "dt.entity.cloud_application_namespace"
+            },
+            "applyTo": [],
+            "filter": "{\"type\":\"Group\",\"range\":{\"from\":0,\"to\":25},\"logicalOperator\":\"AND\",\"explicit\":false,\"children\":[{\"type\":\"Statement\",\"range\":{\"from\":0,\"to\":24},\"key\":{\"type\":\"Key\",\"textValue\":\"entity.name\",\"value\":\"entity.name\",\"range\":{\"from\":0,\"to\":11}},\"operator\":{\"type\":\"ComparisonOperator\",\"textValue\":\"=\",\"value\":\"=\",\"range\":{\"from\":12,\"to\":13}},\"value\":{\"type\":\"String\",\"textValue\":\"\\\"$cluster\\\"\",\"value\":\"$cluster\",\"isEscaped\":true,\"range\":{\"from\":14,\"to\":24}}}]}"
+        },
+        {
+            "dataObject": "dt.entity.kubernetes_service",
+            "relationship": {
+                "name": "belongs_to",
+                "target": "dt.entity.cloud_application_namespace"
+            },
+            "applyTo": [],
+            "filter": ""
+        },
+        {
+            "dataObject": "dt.entity.process_group",
+            "relationship": {
+                "name": "belongs_to",
+                "target": "dt.entity.cloud_application_namespace"
+            },
+            "applyTo": [],
+            "filter": ""
+        },
+        {
+            "dataObject": "dt.entity.service",
+            "relationship": {
+                "name": "belongs_to",
+                "target": "dt.entity.cloud_application_namespace"
+            },
+            "applyTo": [],
+            "filter": ""
+        }
+    ],
+    "variables": {
+        "type": "query",
+        "value": "fetch dt.entity.kubernetes_cluster\n| filter matchesPattern(entity.name, \"'{{.default_cluster_prefix}}' INT '{{.default_cluster_postfix}}'\")\n| fields cluster = entity.name \n| sort lower(cluster) asc"
+    }
+}

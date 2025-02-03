@@ -1,0 +1,85 @@
+{
+    "name": "Segment K8s Service (Perform Demo)",
+    "isPublic": false,
+    "includes": [
+        {
+            "filter": "{\"type\":\"Group\",\"range\":{\"from\":0,\"to\":82},\"logicalOperator\":\"AND\",\"explicit\":false,\"children\":[{\"type\":\"Statement\",\"range\":{\"from\":0,\"to\":39},\"key\":{\"type\":\"Key\",\"textValue\":\"k8s.cluster.name\",\"value\":\"k8s.cluster.name\",\"range\":{\"from\":0,\"to\":16}},\"operator\":{\"type\":\"ComparisonOperator\",\"textValue\":\"=\",\"value\":\"starts-with\",\"range\":{\"from\":17,\"to\":18}},\"value\":{\"type\":\"String\",\"textValue\":\"{{.cluster-prefix}}*\",\"value\":\"{{.cluster-prefix}}\",\"range\":{\"from\":19,\"to\":39},\"operator\":\"starts-with\"}},{\"type\":\"LogicalOperator\",\"textValue\":\"AND\",\"value\":\"AND\",\"range\":{\"from\":40,\"to\":43}},{\"type\":\"Statement\",\"range\":{\"from\":44,\"to\":82},\"key\":{\"type\":\"Key\",\"textValue\":\"k8s.namespace.name\",\"value\":\"k8s.namespace.name\",\"range\":{\"from\":44,\"to\":62}},\"operator\":{\"type\":\"ComparisonOperator\",\"textValue\":\"=\",\"value\":\"=\",\"range\":{\"from\":63,\"to\":64}},\"value\":{\"type\":\"String\",\"textValue\":\"{{.service-name}}\",\"value\":\"{{.service-name}}\",\"range\":{\"from\":65,\"to\":82}}}]}",
+            "dataObject": "_all_data_object",
+            "applyTo": []
+        },
+        {
+            "filter": "",
+            "dataObject": "dt.entity.cloud_application",
+            "applyTo": [],
+            "relationship": {
+                "name": "belongs_to",
+                "target": "dt.entity.cloud_application_namespace"
+            }
+        },
+        {
+            "filter": "",
+            "dataObject": "dt.entity.cloud_application_instance",
+            "applyTo": [],
+            "relationship": {
+                "name": "belongs_to",
+                "target": "dt.entity.cloud_application_namespace"
+            }
+        },
+        {
+            "filter": "{\"type\":\"Group\",\"range\":{\"from\":0,\"to\":32},\"logicalOperator\":\"AND\",\"explicit\":false,\"children\":[{\"type\":\"Statement\",\"range\":{\"from\":0,\"to\":31},\"key\":{\"type\":\"Key\",\"textValue\":\"entity.name\",\"value\":\"entity.name\",\"range\":{\"from\":0,\"to\":11}},\"operator\":{\"type\":\"ComparisonOperator\",\"textValue\":\"=\",\"value\":\"=\",\"range\":{\"from\":12,\"to\":13}},\"value\":{\"type\":\"String\",\"textValue\":\"{{.service-name}}\",\"value\":\"{{.service-name}}\",\"range\":{\"from\":14,\"to\":31}}}]}",
+            "dataObject": "dt.entity.cloud_application_namespace",
+            "applyTo": [
+                "bizevents",
+                "events",
+                "logs",
+                "metrics",
+                "spans"
+            ]
+        },
+        {
+            "filter": "",
+            "dataObject": "dt.entity.container_group_instance",
+            "applyTo": [],
+            "relationship": {
+                "name": "belongs_to",
+                "target": "dt.entity.cloud_application_namespace"
+            }
+        },
+        {
+            "filter": "",
+            "dataObject": "dt.entity.kubernetes_cluster",
+            "applyTo": [],
+            "relationship": {
+                "name": "cluster_of",
+                "target": "dt.entity.cloud_application_namespace"
+            }
+        },
+        {
+            "filter": "",
+            "dataObject": "dt.entity.kubernetes_service",
+            "applyTo": [],
+            "relationship": {
+                "name": "belongs_to",
+                "target": "dt.entity.cloud_application_namespace"
+            }
+        },
+        {
+            "filter": "",
+            "dataObject": "dt.entity.process_group",
+            "applyTo": [],
+            "relationship": {
+                "name": "belongs_to",
+                "target": "dt.entity.cloud_application_namespace"
+            }
+        },
+        {
+            "filter": "",
+            "dataObject": "dt.entity.service",
+            "applyTo": [],
+            "relationship": {
+                "name": "belongs_to",
+                "target": "dt.entity.cloud_application_namespace"
+            }
+        }
+    ]
+}
