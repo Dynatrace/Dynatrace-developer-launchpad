@@ -25,6 +25,7 @@ Benefits for the Central Teams:
 * Feedback Loop: Collects user feedback for continuous improvement.
 
 [Click to see an example launchpad on our Playground](https://wkf10640.apps.dynatrace.com/ui/document/v0/#share=33f04d3e-2dca-432a-8626-8e41abdf581a)
+
 ![Example Launchpad for a Development Team](img/img_launchpad.png)
 
 ## Organization and Structure
