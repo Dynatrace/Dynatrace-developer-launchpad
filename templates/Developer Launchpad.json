@@ -1,0 +1,380 @@
+{
+    "schemaVersion": 2,
+    "title": "Developer Launchpad",
+    "icon": "default",
+    "background": "default",
+    "containerList": {
+        "containers": [
+            {
+                "blocks": [
+                    {
+                        "id": "87268c59-856c-42b5-a67b-bf328fd587ad",
+                        "type": "links",
+                        "properties": {
+                            "expanded": true
+                        },
+                        "appearance": "tile",
+                        "title": "Observability for Developers",
+                        "description": "All data at your fingertips. Use apps with segment filters to drill into your services and applications.",
+                        "contentType": "static",
+                        "content": [
+                            {
+                                "id": "d0daca27-18e1-4827-b582-d1db7f097d37",
+                                "type": "app",
+                                "title": "Dashboards",
+                                "action": {
+                                    "type": "openApp",
+                                    "appId": "dynatrace.dashboards"
+                                },
+                                "icon": "/platform/app-engine/registry/v1/app-icons/dynatrace.dashboards?appVersion=1.303.7",
+                                "categoryId": "apps"
+                            },
+                            {
+                                "id": "bba46be3-f8b7-40dd-aa15-54dd7d99d924",
+                                "type": "app",
+                                "title": "Distributed Tracing",
+                                "action": {
+                                    "type": "openApp",
+                                    "appId": "dynatrace.distributedtracing"
+                                },
+                                "icon": "/platform/app-engine/registry/v1/app-icons/dynatrace.distributedtracing?appVersion=1.1.4",
+                                "categoryId": "apps"
+                            },
+                            {
+                                "id": "b5d676fa-e18f-4eb6-a35c-e3244c1b0d2d",
+                                "type": "app",
+                                "title": "Services",
+                                "action": {
+                                    "type": "openApp",
+                                    "appId": "dynatrace.services"
+                                },
+                                "icon": "/platform/app-engine/registry/v1/app-icons/dynatrace.services?appVersion=1.4.2-dev.20241218T095058%2Bcb508b12",
+                                "categoryId": "apps"
+                            },
+                            {
+                                "id": "ad3777a0-a4e6-4436-8344-3377d2932cdc",
+                                "type": "app",
+                                "title": "Logs",
+                                "action": {
+                                    "type": "openApp",
+                                    "appId": "dynatrace.logs"
+                                },
+                                "icon": "/platform/app-engine/registry/v1/app-icons/dynatrace.logs?appVersion=1.4.0",
+                                "categoryId": "apps"
+                            },
+                            {
+                                "id": "584cf9e3-de24-4ac5-adc8-3d8f3c89824e",
+                                "type": "app",
+                                "title": "Metrics",
+                                "action": {
+                                    "type": "openApp",
+                                    "appId": "dynatrace.classic.metrics"
+                                },
+                                "icon": "/platform/app-engine/registry/v1/app-icons/dynatrace.classic.metrics?appVersion=1.304.56%2B20241119-012001",
+                                "categoryId": "apps"
+                            },
+                            {
+                                "id": "09c910cb-b96e-4b89-b1e0-4ebef3cb98cb",
+                                "type": "app",
+                                "title": "Error Inspector",
+                                "action": {
+                                    "type": "openApp",
+                                    "appId": "dynatrace.error.inspector"
+                                },
+                                "icon": "/platform/app-engine/registry/v1/app-icons/dynatrace.error.inspector?appVersion=1.0.0-preview.1.2.dev.20241218T112420%2B7174f98a",
+                                "categoryId": "apps"
+                            },
+                            {
+                                "id": "a618b87e-f79c-4b87-9ebf-37165656d8d7",
+                                "type": "app",
+                                "title": "Problems",
+                                "action": {
+                                    "type": "openApp",
+                                    "appId": "dynatrace.davis.problems"
+                                },
+                                "icon": "/platform/app-engine/registry/v1/app-icons/dynatrace.davis.problems?appVersion=1.6.1-dev.20241218T131736%2Bc52a3bdc",
+                                "categoryId": "apps"
+                            },
+                            {
+                                "id": "4118ed5d-2000-4c56-a63d-2b2932068858",
+                                "type": "app",
+                                "title": "Live Debugger",
+                                "action": {
+                                    "type": "openApp",
+                                    "appId": "dynatrace.devobs.debugger"
+                                },
+                                "icon": "/platform/app-engine/registry/v1/app-icons/dynatrace.devobs.debugger?appVersion=1.0.8",
+                                "categoryId": "apps"
+                            },
+                            {
+                                "id": "0d4da97a-a561-4f46-9699-2191ec8be325",
+                                "type": "app",
+                                "title": "Profiling & Optimization",
+                                "action": {
+                                    "type": "openApp",
+                                    "appId": "dynatrace.classic.profiling"
+                                },
+                                "icon": "/platform/app-engine/registry/v1/app-icons/dynatrace.classic.profiling?appVersion=1.304.56%2B20241119-012001",
+                                "categoryId": "apps"
+                            }
+                        ]
+                    },
+                    {
+                        "id": "191c8cec-4f39-4622-935a-abb547621b9b",
+                        "type": "links",
+                        "properties": {
+                            "expanded": true
+                        },
+                        "appearance": "tile",
+                        "title": "Your essentials at a glance",
+                        "description": "Health checks on your applications and services with Dashboards.",
+                        "contentType": "static",
+                        "content": [
+                            {
+                                "id": "b70e0742-0622-46d3-9d4c-60816eb7434f",
+                                "type": "doc",
+                                "title": "Web availability and performance",
+                                "action": {
+                                    "type": "openDocument",
+                                    "documentId": "{{.URL_TO_WEB_AVAILABILITY_AND_PERFORMANCE_DB}}"
+                                },
+                                "icon": "",
+                                "categoryId": "dashboards"
+                            },
+                            {
+                                "id": "78e7686f-baa6-4db0-a566-ec8709b62870",
+                                "type": "doc",
+                                "title": "Databases Overview",
+                                "action": {
+                                    "type": "openDocument",
+                                    "documentId": "{{.URL_TO_DATABASES_OVERVIEW_DB}}"
+                                },
+                                "icon": "",
+                                "categoryId": "dashboards"
+                            },
+                            {
+                                "id": "396104c7-62fe-45e9-a309-cf69a3a319eb",
+                                "type": "doc",
+                                "title": "Kubernetes Cluster",
+                                "action": {
+                                    "type": "openDocument",
+                                    "documentId": "{{.URL_TO_KUBERNETES_CLUSTER_DB}}"
+                                },
+                                "icon": "",
+                                "categoryId": "dashboards"
+                            },
+                            {
+                                "id": "38a6b2b6-d5ff-4e0a-a59a-6ba370fd5e37",
+                                "type": "link",
+                                "title": "My Services",
+                                "action": {
+                                    "type": "openExternalLink",
+                                    "url": "/ui/apps/dynatrace.services/explorer/Services?segments={{.SEGMENT_ID_1}}"
+                                },
+                                "description": ""
+                            },
+                            {
+                                "id": "184ddcfd-0d6f-4aa6-9940-26b22735ffb6",
+                                "type": "link",
+                                "title": "My K8s Dev Clusters",
+                                "action": {
+                                    "type": "openExternalLink",
+                                    "url": "/ui/apps/dynatrace.kubernetes/explorer/cluster?segments={%22id%22: %22{{.SEGMENT_ID_W_VARIABLE}}%22,%22variables%22:[{name%22: %22cluster%22,%22values%22:[%22{{.CLUSTER_NAME}}%22]}]}"
+                                },
+                                "description": ""
+                            },
+                            {
+                                "id": "2853c3bc-c9dc-4096-9a01-b1d9dc5223c3",
+                                "type": "link",
+                                "title": "My Traces",
+                                "action": {
+                                    "type": "openExternalLink",
+                                    "url": "/ui/apps/dynatrace.distributedtracing/explorer?segments=id={{.SEGMENT_ID_1}}"
+                                },
+                                "description": ""
+                            },
+                            {
+                                "id": "8e4975ac-8878-4237-aac5-e783dc758e72",
+                                "type": "link",
+                                "title": "My Kubernetes Pods",
+                                "action": {
+                                    "type": "openExternalLink",
+                                    "url": "/ui/apps/dynatrace.dashboards/dashboard/{{.DASHBOARD_ID}}#segments=[{%22id%22: %22{{.SEGMENT_ID_W_VARIABLE}}%22,%22variables%22:[{%22name%22: %22cluster%22,%22values%22: [%22{{.CLUSTER_NAME}}%22]}]}]"
+                                },
+                                "description": ""
+                            }
+                        ]
+                    },
+                    {
+                        "id": "b57b01c2-3581-494f-855f-ced9900bf061",
+                        "type": "links",
+                        "properties": {
+                            "expanded": true
+                        },
+                        "appearance": "tile",
+                        "title": "Tooling",
+                        "description": "Integrations with other tools and platforms that you use, such as Git repositories, CI/CD tools, and issue trackers.",
+                        "contentType": "static",
+                        "content": [
+                            {
+                                "id": "b416d953-87cf-4e99-a424-749af6cd6767",
+                                "type": "link",
+                                "title": "My Jira",
+                                "action": {
+                                    "type": "openExternalLink",
+                                    "url": "{{.URL_TO_YOUR_JIRA_REPO}}"
+                                },
+                                "description": "xxx"
+                            },
+                            {
+                                "id": "2fac8991-b91f-417d-9bd5-b25508ee6da1",
+                                "type": "link",
+                                "title": "My Confluence",
+                                "action": {
+                                    "type": "openExternalLink",
+                                    "url": "{{.URL_TO_YOUR_CONFLUENCE_PAGE}}"
+                                },
+                                "description": ""
+                            },
+                            {
+                                "id": "eb9ddcce-5519-4680-8013-533e4e2524f3",
+                                "type": "link",
+                                "title": "My GitHub",
+                                "action": {
+                                    "type": "openExternalLink",
+                                    "url": "{{.URL_TO_YOUR_GITHUB}}"
+                                },
+                                "description": ""
+                            },
+                            {
+                                "id": "efc1990c-db9d-49c9-a9e1-3be587a2844b",
+                                "type": "link",
+                                "title": "My Backstage",
+                                "action": {
+                                    "type": "openExternalLink",
+                                    "url": "{{.URL_TO_YOUR_BACKSTAGE}}"
+                                },
+                                "description": ""
+                            },
+                            {
+                                "id": "1f5b771a-b04d-409a-8243-e1ff3dfa4152",
+                                "type": "link",
+                                "title": "My Slack Channel",
+                                "action": {
+                                    "type": "openExternalLink",
+                                    "url": "{{.URL_TO_YOUR_SLACK_CHANNEL}}"
+                                },
+                                "description": ""
+                            }
+                        ]
+                    },
+                    {
+                        "id": "0a0bc0af-5db5-4cfa-baa0-f70bc45de270",
+                        "type": "links",
+                        "properties": {
+                            "expanded": true
+                        },
+                        "appearance": "list",
+                        "title": "Documentation and resources",
+                        "description": "Quick access to relevant documentation, coding standards, best practices, quick-start tutorials, sample projects, templates, and other resources",
+                        "contentType": "static",
+                        "content": [
+                            {
+                                "id": "6fe742c6-f192-450b-8add-20697e7aea1c",
+                                "type": "link",
+                                "title": "Detect Performance Issues",
+                                "action": {
+                                    "type": "openExternalLink",
+                                    "url": "https://docs.dynatrace.com/docs/shortlink/detect-performance-issues"
+                                },
+                                "description": "Understanding which requests are slow and why that happens can be challenging in modern, cloud-based, distributed systems."
+                            },
+                            {
+                                "id": "993e23a0-5f2a-46d8-8903-0f77b3eeceac",
+                                "type": "link",
+                                "title": "Log analytics",
+                                "action": {
+                                    "type": "openExternalLink",
+                                    "url": "https://docs.dynatrace.com/docs/shortlink/logs-app#use-cases"
+                                },
+                                "description": "These are the logs you are looking for."
+                            },
+                            {
+                                "id": "30b966a8-3a1a-457b-b5b3-6900010617fb",
+                                "type": "link",
+                                "title": "Log on Grail examples",
+                                "action": {
+                                    "type": "openExternalLink",
+                                    "url": "https://docs.dynatrace.com/docs/analyze-explore-automate/logs/logs-on-grail-examples#log-on-grail-examples"
+                                },
+                                "description": "Create log alerts, log metrics, and work with DQL."
+                            },
+                            {
+                                "id": "0a78b68d-1139-4194-bb0e-19f294e0a823",
+                                "type": "link",
+                                "title": "Always-on app profiling",
+                                "action": {
+                                    "type": "openExternalLink",
+                                    "url": "https://docs.dynatrace.com/docs/observe/applications-and-microservices/use-cases/always-on-app-profiling#always-on-app-profiling"
+                                },
+                                "description": "Method hotspots, CPU profiling, and memory allocation profiling."
+                            }
+                        ]
+                    },
+                    {
+                        "id": "816be1ba-0a1d-49a6-bc41-07d28ebf1dc3",
+                        "type": "links",
+                        "properties": {
+                            "expanded": true
+                        },
+                        "appearance": "list",
+                        "title": "Collaboration",
+                        "description": "Links to collaboration tools and channels.",
+                        "contentType": "static",
+                        "content": [
+                            {
+                                "id": "ab46d6a3-8197-4644-99e0-db974755eaa5",
+                                "type": "link",
+                                "title": "Team chat",
+                                "action": {
+                                    "type": "openExternalLink",
+                                    "url": "{{.URL_TO_YOUR_MY_TEAM_CHAT}}"
+                                },
+                                "description": ""
+                            },
+                            {
+                                "id": "31178c4d-271e-47a3-a3fb-5362cb636f6c",
+                                "type": "link",
+                                "title": "Slack Help",
+                                "action": {
+                                    "type": "openExternalLink",
+                                    "url": "{{.URL_TO_YOUR_SLACK_HELP_CHANNEL}}"
+                                },
+                                "description": ""
+                            },
+                            {
+                                "id": "36a77a2e-191d-4bb8-bff2-ddc26d1fbb5f",
+                                "type": "link",
+                                "title": "Provide feedback!",
+                                "action": {
+                                    "type": "openExternalLink",
+                                    "url": "{{.MAILTO_FEEDBACK}}"
+                                },
+                                "description": "Let us know how you like this launchpad."
+                            }
+                        ]
+                    },
+                    {
+                        "id": "d3bd5763-ec9d-47c7-ae1d-c6d3429bebaf",
+                        "type": "markdown",
+                        "properties": {
+                            "expanded": true
+                        },
+                        "content": "#### New to Dynatrace? Learn more [here](/ui/apps/dynatrace.launcher/getting-started)."
+                    }
+                ],
+                "horizontalLayoutWeight": 1
+            }
+        ]
+    }
+}
