@@ -126,10 +126,8 @@ It is important to have roles, groups, and access permissions for all included r
 ## Scaled Rollout
 For a scaled roll out of Launchpads for development teams we suggest a configuration-as-code approach:
 * Determine different types of developer launchpads with their building blocks, for instance per application or service type
-* Configure segment templates for each type
-* Configure a launchpad template for each type
-* Json-export segments and launchpad templates
-* Replace ids, filter and other variables with Monaco-style placeholders, like ***{{.TEAM_NAME}}, {{.DASHBOARD_ID}}, {{.SEGMENT_ID}}***, etc.
-* Use [Configuration-as-code](https://docs.dynatrace.com/docs/deliver/configuration-as-code) (e.g., with Monacoo) to realize a scaled rollout of standardized launchpads to dev teams
+* Configuration and json-export of segment, dashboard and launchpad examples for template extraction
+* Templating: Replace ids, filter and other variables with Monaco-style placeholders, like ***{{.TEAM_NAME}}, {{.DASHBOARD_ID}}, {{.SEGMENT_ID}}***, etc.
+* Use [Configuration-as-code](https://docs.dynatrace.com/docs/deliver/configuration-as-code) (e.g., with [Monaco]{https://docs.dynatrace.com/docs/deliver/configuration-as-code/monaco}) to realize a scaled rollout of standardized launchpads to dev teams.
 
 Example segment and launchpad json-templates can be found in the sub folder [/templates](/templates).
