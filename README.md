@@ -1,7 +1,7 @@
 # How to set up Developer Launchpads
 
 ## Getting started
-Please refer to the Dynatrace documentation for details on features used in examples, as [Launchpad](https://docs.dynatrace.com/docs/discover-dynatrace/get-started/dynatrace-ui/launchpads), [Segments](https://docs.dynatrace.com/docs/manage/segments), [Dashboards](https://docs.dynatrace.com/docs/analyze-explore-automate/dashboards-and-notebooks/dashboards-new), or [Configuration-as-code](https://docs.dynatrace.com/docs/deliver/configuration-as-code). 
+Please refer to the Dynatrace documentation for details on features used in examples, such as [Launchpad](https://docs.dynatrace.com/docs/discover-dynatrace/get-started/dynatrace-ui/launchpads), [Segments](https://docs.dynatrace.com/docs/manage/segments), [Dashboards](https://docs.dynatrace.com/docs/analyze-explore-automate/dashboards-and-notebooks/dashboards-new), or [Configuration-as-code](https://docs.dynatrace.com/docs/deliver/configuration-as-code). 
 
 Example segment and launchpad json-templates can be found in the sub folder [/templates](/templates). Some concepts described here are still in preview and might be subject to change.
 
@@ -24,6 +24,7 @@ Benefits for the Central Teams:
 * Resource Optimization: Reduces repetitive training and support.
 * Feedback Loop: Collects user feedback for continuous improvement.
 
+[Click to see an example launchpad on our Playground](https://wkf10640.apps.dynatrace.com/ui/document/v0/#share=33f04d3e-2dca-432a-8626-8e41abdf581a)
 ![Example Launchpad for a Development Team](img/img_launchpad.png)
 
 ## Organization and Structure
