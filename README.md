@@ -131,4 +131,5 @@ For a scaled roll out of Launchpads for development teams we suggest a configura
 * Json-export segments and launchpad templates
 * Replace ids, filter and other variables with Monaco-style placeholders, like ***{{.TEAM_NAME}}, {{.DASHBOARD_ID}}, {{.SEGMENT_ID}}***, etc.
 * Use [Configuration-as-code](https://docs.dynatrace.com/docs/deliver/configuration-as-code) (e.g., with Monacoo) to realize a scaled rollout of standardized launchpads to dev teams
-Sample json files can be found in the /templates folder of this project.
+
+Example segment and launchpad json-templates can be found in the sub folder [/templates](/templates).
